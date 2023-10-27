@@ -2,6 +2,8 @@ import NavBar from "@/components/NavBar";
 import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import { useLocale } from "next-intl";
+import { notFound } from "next/navigation";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -12,11 +14,13 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
+  params: { locale },
 }: {
   children: React.ReactNode;
+  params: any;
 }) {
   return (
-    <html lang="en">
+    <html lang={locale}>
       <body className={inter.className + " bg-[#FAF1E4]"}>
         <NavBar />
         {children}
