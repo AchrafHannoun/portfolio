@@ -1,6 +1,9 @@
 import Image from "next/image";
-import Link from "next/link";
-export default function NavBar() {
+import Link from "next-intl/link";
+import SwitchLanguageButton from "./SwitchLanguage";
+import { langProp } from "@/types/langType";
+export default function NavBar(props: langProp) {
+  const currentLanguage = props.lang;
   return (
     <nav className="flex mx-64 mt-5 items-center justify-between font-cal font-semibold text-gray-900">
       <h1>
@@ -22,6 +25,9 @@ export default function NavBar() {
               alt="Icon for the dark mode"
             />
           </button>
+        </li>
+        <li>
+          <SwitchLanguageButton lang={currentLanguage} />
         </li>
       </ul>
     </nav>

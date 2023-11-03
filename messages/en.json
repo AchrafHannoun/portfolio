@@ -1,5 +1,6 @@
 {
   "Index": {
-    "title": "Hello world!"
+    "switchButton": "switch to french",
+    "greetingSection": "Hi, I'm Achraf Hannoun"
   }
 }

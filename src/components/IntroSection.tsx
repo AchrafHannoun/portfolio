@@ -1,7 +1,10 @@
+import { useTranslations } from "next-intl";
+
 export default function IntroSection() {
+  const t = useTranslations("Index");
   return (
     <section className="flex flex-col justify-between w-2/3 my-2">
-      <h1 className=" text-2xl text-[#435334]">Hi, I'm Achraf Hannoun</h1>
+      <h1 className=" text-2xl text-[#435334]">{t("greetingSection")}</h1>
       <div className="flex flex-row gap-4 shadow-sm rounded-lg shadow-green-600">
         <div className="border-solid border-l-2 rounded-md border-green-600"></div>
         <p className=" text-lg font-medium font-montserrat hidden">

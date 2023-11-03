@@ -9,6 +9,7 @@ export default createMiddleware({
 
   //disable local detection
   localeDetection: false,
+  localePrefix: "always",
 });
 
 export const config = {
