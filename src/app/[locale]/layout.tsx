@@ -2,6 +2,7 @@ import NavBar from "@/components/NavBar";
 import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import { useTranslations } from "next-intl";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,10 +17,12 @@ export default function RootLayout({
   children: React.ReactNode;
   params: any;
 }) {
+  const t = useTranslations("Index");
+  const switchLang = t("switchButton");
   return (
     <html lang={locale}>
       <body className={inter.className + " bg-[#FAF1E4]"}>
-        <NavBar lang={locale} />
+        <NavBar lang={locale} message={switchLang} />
         {children}
       </body>
     </html>

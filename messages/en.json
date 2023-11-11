@@ -1,6 +1,7 @@
 {
   "Index": {
-    "switchButton": "switch to french",
-    "greetingSection": "Hi, I'm Achraf Hannoun"
+    "switchButton": "fr",
+    "greetingSection": "Hi, I'm Achraf Hannoun",
+    "whoAmI": "I'm a full-stack web developer with a background in education. I'm passionate about crafting elegant, well-documented code. Whether I'm coding, explaining my work, or creating content, I take pride in delivering high-quality solutions that empower others to thrive in the web development world."
   }
 }

@@ -7,8 +7,6 @@ export default function Page() {
       <Link href={"/"}>
         <button>bring me back home </button>
       </Link>
-
-      <SwitchLanguageButton />
     </main>
   );
 }

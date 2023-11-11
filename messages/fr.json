@@ -1,6 +1,7 @@
 {
   "Index": {
-    "switchButton": "Voir le site en anglais",
-    "greetingSection": "Bonjour, Je suis Achraf Hannoun"
+    "switchButton": "en",
+    "greetingSection": "Bonjour, Je suis Achraf Hannoun",
+    "whoAmI": "En tant que développeur web full-stack avec une formation en sciences, je suis animé par la passion de créer du code élégant, soigneusement documenté. Je trouve ma fierté dans l'autonomisation des autres pour prospérer dans l'univers du développement web."
   }
 }

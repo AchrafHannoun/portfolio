@@ -11,6 +11,12 @@ export default function SwitchLanguageButton(props: langProp) {
       router.replace(pathname, { locale: "fr" });
     }
   };
-
-  return <button onClick={changeLanguage}>switch To french</button>;
+  return (
+    <button
+      className="bg-[#CEDEBD] px-4 rounded-lg hover:bg-[#9EB384]"
+      onClick={changeLanguage}
+    >
+      {props.message}
+    </button>
+  );
 }

@@ -4,12 +4,13 @@ import SwitchLanguageButton from "./SwitchLanguage";
 import { langProp } from "@/types/langType";
 export default function NavBar(props: langProp) {
   const currentLanguage = props.lang;
+  const switchButtonMessage = props.message;
   return (
     <nav className="flex mx-64 mt-5 items-center justify-between font-cal font-semibold text-gray-900">
       <h1>
         <Link href="/">Achraf;</Link>
       </h1>
-      <ul className="flex w-1/4 items-center justify-between">
+      <ul className="flex w-1/3 items-center justify-between">
         <li>
           <Link href="/about-me">About Me</Link>
         </li>
@@ -27,7 +28,10 @@ export default function NavBar(props: langProp) {
           </button>
         </li>
         <li>
-          <SwitchLanguageButton lang={currentLanguage} />
+          <SwitchLanguageButton
+            lang={currentLanguage}
+            message={switchButtonMessage}
+          />
         </li>
       </ul>
     </nav>
