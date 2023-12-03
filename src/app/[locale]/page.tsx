@@ -1,6 +1,7 @@
 import IntroSection from "@/components/IntroSection";
 import ImageSection from "@/components/ImageSection";
 import ProjectsSection from "@/components/ProjectsSection";
+import SkillsSection from "@/components/SkillsSection";
 
 export default function Home() {
   return (
@@ -14,8 +15,8 @@ export default function Home() {
         <ProjectsSection />
       </section>
 
-      <section>
-        <h1>projects</h1>
+      <section className="w-full">
+        <SkillsSection />
       </section>
     </main>
   );
