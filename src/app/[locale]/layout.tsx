@@ -21,7 +21,7 @@ export default function RootLayout({
   const switchLang = t("switchButton");
   return (
     <html lang={locale}>
-      <body className={inter.className + " bg-[#FAF1E4]"}>
+      <body className={inter.className + " bg-[#FAF1E4] h-screen w-screen"}>
         <NavBar lang={locale} message={switchLang} />
         {children}
       </body>

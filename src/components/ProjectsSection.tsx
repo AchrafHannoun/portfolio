@@ -1,9 +1,10 @@
 import ProjectCard from "./ProjectCard";
 export default function ProjectsSection() {
   return (
-    <>
+    <div>
       <h2 className="font-montserrat font-bold text-xl pb-2">My projects</h2>
-      <section className="grid grid-flow-col gap-3">
+      <section className="w-full pl-10 pt-12">
+      <div className="grid grid-flow-col">
         <ProjectCard
           projectTitle="This portfolio"
           imageSrc="/portfolio.png"
@@ -27,7 +28,8 @@ export default function ProjectsSection() {
           technologies={["nextJS", "Typescript", "TailwindCss"]}
           link="/"
         />
+      </div>
       </section>
-    </>
+    </div>
   );
 }

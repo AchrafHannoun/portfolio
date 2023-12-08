@@ -13,7 +13,7 @@ export default function SwitchLanguageButton(props: langProp) {
   };
   return (
     <button
-      className="bg-[#CEDEBD] px-4 rounded-lg hover:bg-[#9EB384]"
+      className="bg-[#CEDEBD] px-6 py-2 rounded-lg hover:bg-[#9EB384]"
       onClick={changeLanguage}
     >
       {props.message}
