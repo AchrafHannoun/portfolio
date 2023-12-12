@@ -11,13 +11,13 @@ export default function ProjectCard(props: project) {
     );
   });
   return (
-    <div className="flex flex-col w-[250px] border-2 border-green-400 bg-[#ECE3CE] rounded-md hover:shadow-lg hover:shadow-green-300">
+    <div className="flex flex-col max-w-[250px] Pborder-2 border-green-400 bg-[#ECE3CE] rounded-md hover:shadow-lg hover:shadow-green-300">
       <Image
         src={props.imageSrc}
         width={250}
         height={250}
         alt={"image for the projet " + props.projectTitle}
-        className="rounded-t-md"
+        className="rounded-t-md object-covers"
       />
       <div className="">
         <h3 className="m-auto w-fit pt-2 font-montserrat font-bold text-xl">

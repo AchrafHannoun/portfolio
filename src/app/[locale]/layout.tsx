@@ -3,6 +3,7 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { useTranslations } from "next-intl";
+import Footer from "@/components/FooterSection";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,10 +22,11 @@ export default function RootLayout({
   const switchLang = t("switchButton");
   return (
     <html lang={locale}>
-      <body className={inter.className + " bg-[#FAF1E4] h-screen w-screen"}>
+      <body className={inter.className + " bg-[#FAF1E4] max-w-screen mx-auto"}>
         <NavBar lang={locale} message={switchLang} />
         {children}
       </body>
+      <Footer />
     </html>
   );
 }

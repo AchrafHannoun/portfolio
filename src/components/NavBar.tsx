@@ -15,7 +15,7 @@ export default function NavBar(props: langProp) {
   };
 
   return (
-    <nav className="flex flex-col md:flex-row w-full md:w-2/3 mx-auto mt-5 items-center justify-between font-cal font-extrabold text-xl md:text-2xl xl:font-semibold text-gray-900">
+    <nav className="flex flex-col md:flex-row w-full md:w-2/3 mx-auto mt-5 items-center justify-between font-cal font-extrabold text-xl md:text-2xl xl:font-semibold text-gray-900 ">
       <div className="flex items-center justify-between w-full">
         <h1 className="text-lg md:text-xl">
           <Link href="/">Achraf;</Link>
@@ -29,7 +29,7 @@ export default function NavBar(props: langProp) {
             textAlign: toggleMenu ? 'center' : 'left',
             fontSize: toggleMenu ? '1.5rem' : 'inherit',
           }}>
-        <li className="mb-2 md:mb-0 text-sm md:text-base">
+        <li className="mb-2 md:mb-0 text-sm md:text-base md:w-[80px] md:mx-auto">
           <Link href="/about-me">About Me</Link>
         </li>
         <li className="mb-2 md:mb-0 text-sm md:text-base">

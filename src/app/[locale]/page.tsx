@@ -5,17 +5,19 @@ import SkillsSection from "@/components/SkillsSection";
 
 export default function Home() {
   return (
-    <main className="flex flex-col font-semibold items-center justify-between mx-64 mt-24 gap-24">
-      <section className="w-full font-sf flex flex-row gap-10 xl:gap-20 border-t-2 border-green-600 border-b-2 rounded-bl-xl rounded-tr-xl divide-x-2 animate-flip-up animate-delay-500">
-        <IntroSection />
-        <ImageSection />
-      </section>
+    <main className="flex flex-col font-semibold items-center justify-between lg:w-2/3 md:w-5/6 md:m-auto pt-24 mx-0 gap-24">
+      <div className=" max-w-screen mx-auto">
+        <section className="flex flex-col-reverse md:flex-row w-full gap-10 md:gap-20 border-t-2 md:border-green-600 md:border-b-2 md:rounded-bl-xl md:rounded-tr-xl divide-x-2 animate-flip-up animate-delay-500 sm:flex-col">
+          <IntroSection />
+          <ImageSection />
+        </section>
+      </div>
 
-      <section className="w-full hidden">
+      <section className="max-w-screen w-full">
         <ProjectsSection />
       </section>
 
-      <section className="w-full hidden">
+      <section className="w-full">
         <SkillsSection />
       </section>
     </main>
