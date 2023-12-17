@@ -4,7 +4,7 @@ export default function SocialMedia() {
   return (
     <ul className="flex flex-row justify-center gap-10 text-green-600">
       <li className="hover:border-2 border-green-300 rounded-full">
-        <Link href="">
+        <Link href="/blog/aws-quickstart">
           <Image
             src="/linkedin.svg"
             width={40}
