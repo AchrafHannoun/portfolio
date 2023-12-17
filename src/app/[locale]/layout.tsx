@@ -25,8 +25,8 @@ export default function RootLayout({
       <body className={inter.className + " bg-[#FAF1E4] max-w-screen mx-auto"}>
         <NavBar lang={locale} message={switchLang} />
         {children}
+        <Footer />
       </body>
-      <Footer />
     </html>
   );
 }
