@@ -1,9 +1,10 @@
 import fs from 'fs';
 import { postMetaData } from "@/types/postMetadata";
 import matter from 'gray-matter';
+import path from 'path';
 
 export default function getPostMetaData (): postMetaData[] {
-    const folder = "src/posts/";
+    const folder = path.join(process.cwd(), 'src/posts');
     const files = fs.readdirSync(folder);
     const markdowsPosts = files.filter((file) => file.endsWith(".md"));
     const posts = markdowsPosts.map((fileName) => {
@@ -16,6 +17,6 @@ export default function getPostMetaData (): postMetaData[] {
         slug: fileName.replace(".md", ""),
       };
     });
-  
+
     return posts;
   };
